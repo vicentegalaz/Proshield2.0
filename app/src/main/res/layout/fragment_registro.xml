@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Registro"
+    android:background="@android:color/white"> <!-- Fondo blanco para el contenedor principal -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"> <!-- ScrollView para permitir desplazamiento -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@drawable/background_shape"
+            android:elevation="4dp"> <!-- Sombra para un efecto elevado -->
+
+            <!-- Contenedor para la foto de perfil -->
+            <ImageView
+                android:id="@+id/imageViewProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle_background"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Espacio entre la imagen y los campos -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Nombre de Usuario -->
+            <EditText
+                android:id="@+id/editTextNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="12dp" /> <!-- Espacio inferior -->
+
+            <!-- RUT -->
+            <EditText
+                android:id="@+id/editTextRUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="RUT (sin puntos ni guiones)"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="12dp"
+                android:inputType="text"
+                android:maxLength="12" /> <!-- Limitar la longitud a 12 caracteres -->
+
+            <!-- Contraseña -->
+            <EditText
+                android:id="@+id/editTextContraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:inputType="textPassword"
+                android:layout_marginBottom="12dp" /> <!-- Espacio inferior -->
+
+            <!-- Número de contacto -->
+            <EditText
+                android:id="@+id/editTextNumeroContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número de Contacto"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="12dp" /> <!-- Espacio inferior -->
+
+            <!-- Número de emergencia -->
+            <EditText
+                android:id="@+id/editTextNumeroEmergencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número de Emergencia"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="12dp" /> <!-- Espacio inferior -->
+
+            <!-- Campo de Trabajo -->
+            <EditText
+                android:id="@+id/editTextTrabajo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Trabajo"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="12dp" /> <!-- Espacio inferior -->
+
+            <!-- Posee alguna enfermedad -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Posee alguna enfermedad?"
+                android:layout_marginBottom="4dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerPoseeEnfermedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="12dp" /> <!-- Espacio inferior -->
+
+            <!-- Tipo de usuario -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de usuario"
+                android:layout_marginBottom="4dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="12dp" /> <!-- Espacio inferior -->
+
+            <!-- Botón de registro -->
+            <Button
+                android:id="@+id/buttonRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

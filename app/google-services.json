@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "987073727885",
+    "project_id": "fir-314a6",
+    "storage_bucket": "fir-314a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987073727885:android:a8f9c5fadb6c0d943b01c4",
+        "android_client_info": {
+          "package_name": "com.example.proshield"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0XcS8M4M0r9G7DhaJ128cD4fVREb8Ud4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
